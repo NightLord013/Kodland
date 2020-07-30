@@ -1,0 +1,9 @@
+{% load static %}
+
+{% for i in entries %}
+
+{{ i.text }}
+<img src="{{ i.photo.url}}">
+{{ i.pubdate}}
+
+{% endfor%}
