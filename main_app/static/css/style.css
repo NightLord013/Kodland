@@ -11,15 +11,15 @@
 body {
 	margin: 0;
 	padding: 0;
-	padding-top: 0.5vw;
 	word-break: normal;
+	transition: ease 1s;
 }
 
 header {
 	border-bottom: 2px solid #CDCDCD;
 	padding-right: 7vw;
 	padding-left: 7vw;
-	padding-top: 0.7vw;
+	padding-top: 1.3vw;
 	padding-bottom: 1vw;
 }
 
@@ -173,6 +173,7 @@ header {
 	display: block;
 	margin: 0 auto;
 	width: 17vw;
+	max-height: 10vw;
 }
 
 .another_entry #entry p:last-child {

@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kodland — Статья №{{post.id}}</title>
+	<title>Kodland — Создать статью</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="{% static "css/post_style.css" %}">
+	<link rel="stylesheet" href="{% static "css/new_post_style.css" %}">
 </head>
 <body>
 	<header>
@@ -18,10 +18,13 @@
 			</a>
 		</div>
 	</header>
-	<section class="content">
-		<h3>{{post.title}}</h3>
-		<img src="{{ post.photo.url}}">
-		<p>{{post.text|safe}}</p>
-	</section>
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input type = "submit" value = "Опубликовать"><br>
+		{{form.title}}
+		{{form.media}}
+		{{form.text}}
+		{{form.photo}}
+	</form>
 </body>
 </html>

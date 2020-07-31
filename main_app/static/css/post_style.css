@@ -1,0 +1,90 @@
+{% load staticfiles %}
+@font-face {
+	font-family: 'Circe Rounded';
+	src: url("../font/CirceRounded-Regular.ttf");
+}
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../font/ofont.ru_Museo Cyrl 500.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	word-break: normal;
+	background-color: #E5E5E5;
+	transition: ease 1s;
+}
+
+header {
+	border-bottom: 2px solid #CDCDCD;
+	padding-right: 7vw;
+	padding-left: 7vw;
+	padding-top: 1.3vw;
+	padding-bottom: 1vw;
+	background-color: #FFF;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #010101;
+	outline: none;
+}
+
+#logo img{
+	margin-right: 0.8vw;
+	width: 7vw;
+}
+
+#logo span {
+	position: relative;
+	bottom: 0.2vw;
+	font-size: 1.2vw;
+	font-weight: 700;
+	margin-bottom: 0.5vw;
+	font-family: 'Circe Rounded';
+}
+
+#logo button {
+	float: right;
+	position: relative;
+	bottom: 0.2vw;
+	color: #FFF;
+	font-size: 1vw;
+	background-color: #315AF2;
+	width: 10vw;
+	height: 1.8vw;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Circe Rounded';
+	font-weight: 600;
+	outline: none;
+}
+
+
+
+
+
+.content {
+	margin-right: 30vw;
+	margin-left: 30vw;
+	margin-bottom: 5vw;
+}
+
+.content h3{
+	width: 29vw;
+	font-size: 1.9vw;
+	color: #315AF2;
+	font-family: 'Museo Cyrl';
+	font-weight: 900;
+}
+
+.content img {
+	width: 40vw;
+}
+
+.content p {
+	font-size: 1vw;
+	font-family: 'Circe Rounded';
+	line-height: 1.3vw;
+}
