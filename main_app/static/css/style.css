@@ -59,6 +59,10 @@ header {
 	outline: none;
 }
 
+#logo button:hover {
+	background-color: rgba(49, 90, 242, 0.75);
+}
+
 
 
 .new_entry {
@@ -122,7 +126,9 @@ header {
 	outline: none;
 }
 
-
+.new_entry button:hover {
+	background-color: rgba(49, 90, 242, 0.75);
+}
 
 
 
@@ -147,12 +153,15 @@ header {
 .another_entry #entry {
 	width: 21vw;
 	height: 21vw;
-	
 	border: 2px solid #CDCDCD;
 	margin-right: 3.5vw;
 	margin-left: 4vw;
 	margin-bottom: 3vw;
 	padding: 0.8vw;
+}
+
+.another_entry #entry:hover {
+	box-shadow: 0 0 10px rgba(49, 90, 242, 0.75);
 }
 
 .another_entry #entry a{

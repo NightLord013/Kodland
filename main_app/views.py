@@ -5,8 +5,8 @@ from .models import Entry
 from .forms import PostForm
 
 def index(request):
-    entries = Entry.objects.all()
-    number = entries.count() + 1
+    number = Entry.objects.latest('pubdate')
+    entries = Entry.objects.filter().order_by('-pk')[:10]
     return render(request, 'Kodland/home.html', {'entries' : entries, "number": number})
 
 def post_detail(request, pk):

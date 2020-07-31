@@ -59,24 +59,128 @@ header {
 	outline: none;
 }
 
-form {
-	margin-right: 7vw;
-	margin-left: 7vw;
+#logo button:hover {
+	background-color: rgba(49, 90, 242, 0.75);
 }
 
-form button {
+
+
+
+h3 {
+	margin-right: 17vw;
+	margin-left: 17vw;
+	font-size: 2.8vw;
+	color: #315AF2;
+	font-family: 'Museo Cyrl';
+}
+
+form {
+	margin-right: 17vw;
+	margin-left: 17vw;
+}
+
+form button[type = "submit"] {
 	display: inline-block;
+	width: 8vw;
+	height: 2.7vw;
+	position: relative;
+	bottom: 0.1vw;
+	margin-left: 2vw;
+	background-color: #E9399C;
+	color: #FFF;
+	font-family: 'Circe Rounded';
+	font-size: 1vw;
+	font-weight: 900;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+}
+
+form button[type = "submit"]:hover {
+	background-color: #D93696;
 }
 
 #form_1 {
 	display: inline-block;
 }
 
+#form_1 input:nth-last-child(1) {
+	display: inline-block;
+	background: #FFF;
+	width: 42.5vw;
+	height: 2.5vw;
+	border: 2px solid #CDCDCD;
+	font-size: 1.5vw;
+	padding-left: 1vw;
+	color: #315AF2;
+	font-family: 'Circe Rounded';
+	border-radius: 6px; 
+	outline: none;
+}
+
+form #choose_photo {
+	display: inline-block;
+	width: 17vw;
+	height: 15vw;
+	float: right;
+	margin-right: 2vw;
+	border: 2px solid #E5E5E5;
+}
+
+form #choose_photo button {
+	display: inline-block;
+	width: 12vw;
+	height: 2.7vw;
+	position: relative;
+	bottom: 0.1vw;
+	margin-left: 2vw;
+	background-color: #315AF2;
+	color: #FFF;
+	font-family: 'Circe Rounded';
+	font-size: 1vw;
+	font-weight: 900;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+}
+
+form #choose_photo button:hover {
+	background-color: rgba(49, 90, 242, 0.75);
+}
+
+form #choose_photo #blah {
+	width: 17vw;
+	height: 12vw;
+}
+
+form #choose_photo button span {
+	position: relative;
+	top: 0.7vw;
+}
+
 #form_2 {
+	width: 12vw;
+	text-align: center;
+}
+#form_3 {
 	display: inline-block;
 }
 
-#form_3 {
+#form_2 input:nth-last-child(1) {
+	margin: 0;
+	padding: 0;
+	width: 11vw;
+	height: 2vw;
 	display: inline-block;
-	vertical-align: top;
+	border: 2px solid #E5E5E5;
+	background-color: #315AF2;
+	opacity: 0;
+	position: relative;
+	bottom: 0.5vw;
+}
+
+@media screen and (max-width: 1790px){
+	form #choose_photo{
+		float: none;
+	}
 }

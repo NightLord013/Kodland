@@ -61,6 +61,10 @@ header {
 	outline: none;
 }
 
+#logo button:hover {
+	background-color: rgba(49, 90, 242, 0.75);
+}
+
 
 
 
