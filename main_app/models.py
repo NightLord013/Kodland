@@ -2,6 +2,7 @@ from django.db import models
 
 class Entry(models.Model):
     title = models.CharField(max_length = 80, verbose_name = "Заголовок")
+    short_text = models. CharField(max_length = 350, verbose_name = "Краткая информация", default = "")
     text = models.TextField(verbose_name = "Текст")
     photo = models.ImageField(upload_to = 'images/', verbose_name = "Фото")
     pubdate = models.DateTimeField(auto_now = True, verbose_name = "Дата публикации")

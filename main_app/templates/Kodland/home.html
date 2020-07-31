@@ -1,9 +1,45 @@
-{% load static %}
-
-{% for i in entries %}
-
-{{ i.text }}
-<img src="{{ i.photo.url}}">
-{{ i.pubdate}}
-
-{% endfor%}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kodland -- Главная</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+	<header>
+		<div id = "logo">
+			<a href = "">
+				<img src = "{% static "img/Logo.png" %}">
+				<span>Блог</span>
+			</a>
+			<button>+ Добавить статью</button>
+		</div>
+	</header>
+	{% for entry in entries %}
+	{% if entry.id == number %} <!--новая статья  ИСПАВИТЬ!-->
+	<section class = new_entry>
+		<img src="{{ entry.photo.url}}">
+		<p id="new">NEW</p>
+		<h3>{{ entry.title }}</h3>
+		<p>{{ entry.short_text }}</p>
+		<a href='{% url "post_detail" pk=number %}'><button>Читать</button></a>
+	</section>
+	{% endif %}
+	{% endfor %}
+	<section class="another_entry">
+		<h4>Другие статьи</h4>
+		<div class="all_entries">
+			{% for entry in entries %}
+			<div id = "entry">
+				<a href = '{% url "post_detail" pk=entry.pk %}'>
+					<p>{{ entry.pubdate }}</p>
+					<img src="{{ entry.photo.url}}">
+					<p>{{ entry.title }}</p>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,183 @@
+{% load staticfiles %}
+@font-face {
+	font-family: 'Circe Rounded';
+	src: url("../font/CirceRounded-Regular.ttf");
+}
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('../font/ofont.ru_Museo Cyrl 500.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5vw;
+	word-break: normal;
+}
+
+header {
+	border-bottom: 2px solid #CDCDCD;
+	padding-right: 7vw;
+	padding-left: 7vw;
+	padding-top: 0.7vw;
+	padding-bottom: 1vw;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #010101;
+	outline: none;
+}
+
+#logo img{
+	margin-right: 0.8vw;
+	width: 7vw;
+}
+
+#logo span {
+	position: relative;
+	bottom: 0.2vw;
+	font-size: 1.2vw;
+	font-weight: 700;
+	margin-bottom: 0.5vw;
+	font-family: 'Circe Rounded';
+}
+
+#logo button {
+	float: right;
+	position: relative;
+	bottom: 0.2vw;
+	color: #FFF;
+	font-size: 1vw;
+	background-color: #315AF2;
+	width: 10vw;
+	height: 1.8vw;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Circe Rounded';
+	font-weight: 600;
+	outline: none;
+}
+
+
+
+.new_entry {
+	border-bottom: 2px solid #CDCDCD;
+	padding-right: 7vw;
+	padding-left: 7vw;
+}
+
+.new_entry img {
+	position: relative;
+	top: 3vw;
+	float: right;
+	margin-right: 5vw;
+	width: 32vw;
+	height: 18vw;
+}
+
+.new_entry #new{
+	margin-top: 2.5vw;
+	margin-bottom: 0;
+	position: relative;
+	left: 0.3vw;
+	color: #E9399C;
+	font-family: 'Circe Rounded';
+}
+
+.new_entry h3 {
+	font-size: 3vw;
+	width: 50vw;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #315AF2;
+	font-family: 'Museo Cyrl';
+}
+
+.new_entry p {
+	font-size: 1vw;
+	margin-bottom: 2.5vw;
+	line-height: 1.7vw;
+	width: 45vw;
+	font-family: 'Circe Rounded';
+}
+
+.new_entry p:nth-last-child(2){
+	font-size: 1.1vw;
+	width: 25vw;
+	height: 10vw;
+}
+
+.new_entry button {
+	color: #FFF;
+	font-size: 2vw;
+	background-color: #315AF2;
+	width: 9vw;
+	height: 3.5vw;
+	border-radius: 6px;
+	border: none;
+	margin-bottom: 4vw;
+	font-family: 'Museo Cyrl';
+	font-weight: 900;
+	outline: none;
+}
+
+
+
+
+
+.another_entry {
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.another_entry h4 {
+	padding-left: 4vw;
+	font-size: 1.6vw;
+	color: #315AF2;
+	font-family: 'Museo Cyrl';
+}
+
+.another_entry .all_entries{
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Circe Rounded';
+}
+
+.another_entry #entry {
+	width: 21vw;
+	height: 21vw;
+	
+	border: 2px solid #CDCDCD;
+	margin-right: 3.5vw;
+	margin-left: 4vw;
+	margin-bottom: 3vw;
+	padding: 0.8vw;
+}
+
+.another_entry #entry a{
+	text-decoration: none;
+	outline: none;
+}
+
+.another_entry #entry a:hover {
+	outline: none;
+}
+
+.another_entry #entry p:first-child {
+	font-size: 1vw;
+	color: #979797;
+}
+
+.another_entry #entry img {
+	display: block;
+	margin: 0 auto;
+	width: 17vw;
+}
+
+.another_entry #entry p:last-child {
+	font-size: 1.5vw;
+	text-align: center;
+	padding: 1vw;
+	color: #315AF2;
+}
