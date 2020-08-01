@@ -5,9 +5,9 @@ from .models import Entry
 from .forms import PostForm
 
 def index(request):
-    number = Entry.objects.latest('pubdate')
+    last_enrty = Entry.objects.latest('pubdate')
     entries = Entry.objects.filter().order_by('-pk')[:10]
-    return render(request, 'Kodland/home.html', {'entries' : entries, "number": number})
+    return render(request, 'Kodland/home.html', {'entries' : entries, "last_enrty": last_enrty})
 
 def post_detail(request, pk):
     post = get_object_or_404(Entry, pk=pk)

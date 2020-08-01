@@ -19,17 +19,17 @@
 		</div>
 	</header>
 	<section class = new_entry>
-		<img src="{{ number.photo.url}}">
+		<img src="{{ last_enrty.photo.url}}">
 		<p id="new">NEW</p>
-		<h3>{{ number.title }}</h3>
-		<p>{{ number.short_text }}</p>
-		<a href='{% url "post_detail" pk=number.pk %}'><button>Читать</button></a>
+		<h3>{{ last_enrty.title }}</h3>
+		<p>{{ last_enrty.short_text }}</p>
+		<a href='{% url "post_detail" pk=last_enrty.pk %}'><button>Читать</button></a>
 	</section>
 	<section class="another_entry">
 		<h4>Другие статьи</h4>
 		<div class="all_entries">
 			{% for entry in entries %}
-			{% if entry !=  number%}
+			{% if entry !=  last_enrty%}
 			<div id = "entry">
 				<a href = '{% url "post_detail" pk=entry.pk %}'>
 					<p>{{ entry.pubdate }}</p>
